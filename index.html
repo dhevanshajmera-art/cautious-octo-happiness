@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Simple Translator</h1>
+    <form>
+        <label for="text-to">Text to translate:</label>
+        <input type="text" id="text-to" name="text">
+        <br>
+
+        <!-- first speaker (input text) -->
+        <img src="volume-up.png"
+             id="speakBtn1"
+             class="speak-icon"
+             onclick="speakInput()"
+             alt="Speak"
+             height="30"
+             width="30"
+             style="cursor:pointer;">
+
+        <br>
+
+        <div class="language-selection">
+            <label for="fromLang">From:</label>
+            <select id="fromLang" name="language"></select>
+
+            <label for="toLang">To:</label>
+            <select id="toLang" name="language"></select>
+        </div>
+
+        <label for="outputText">Translated text:</label>
+        <input type="text" id="outputText" name="outputText">
+        <br>
+
+        <!-- second speaker (translated text) -->
+        <img src="volume-up.png"
+             id="speakBtn2"
+             class="speak-icon"
+             onclick="speakOutput()"
+             alt="Speak"
+             height="30"
+             width="30"
+             style="cursor:pointer;">
+
+        <br><br>
+        <input type="button" id="translateBtn" value="Translate">
+    </form>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

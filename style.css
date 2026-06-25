@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Garamond', sans-serif;
+    color: #464D77;
+    background-color: #F9DB6D;
+    text-align: center;
+    width: 100%;
+    border: 5px solid #877666;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+
+label{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: #242038;
+}
+
+input, select{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    border: 1px solid #464D77;
+    background-color: #FF0000;
+    color: #E1EFF6;
+}
+
+.language-selection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.speak-icon{
+    cursor: pointer;
+    margin: 0.5rem 0;
+}
+
+#translateBtn{
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    transition: 0.3s;
+}
+
+#translateBtn:hover{
+    transform: scale(1.05);
+}
