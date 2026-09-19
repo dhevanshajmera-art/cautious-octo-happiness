@@ -10,13 +10,18 @@
 <body>
     
     <h1>Simple Translator</h1>
+    <br><br><br>
+    <h2>Language now made Simpler !!</h2>
+     <br><br><br>
     <form>
-        <label for="text-to">Text to translate:</label>
-        <input type="text" id="text-to" name="text">
-        <br>
+        <div class = "from">
+            <br><br>
+            <label for="text-to">Text to translate:</label>
+            <input type="text" id="text-to" name="text">
+            <br>
 
-        <!-- first speaker (input text) -->
-        <img src="volume-up.png"
+            <!-- first speaker (input text) -->
+            <img src="volume-up.png"
              id="speakBtn1"
              class="speak-icon"
              onclick="speakInput()"
@@ -25,22 +30,25 @@
              width="30"
              style="cursor:pointer;">
 
-        <br>
-
-        <div class="language-selection">
-            <label for="fromLang">From:</label>
-            <select id="fromLang" name="language"></select>
-
-            <label for="toLang">To:</label>
+            <br><br>
+         </div>
+            <div class="language-selection">
+                <br><br> <br><br>
+                <label for="fromLang">From:</label>
+                <select id="fromLang" name="language"></select>
+       
+                <label for="toLang">To:</label>
             <select id="toLang" name="language"></select>
-        </div>
+             <br><br> <br><br>
+            </div>
+        <div class="to">
+            <br><br>
+            <label for="outputText">Translated text:</label>
+            <input type="text" id="outputText" name="outputText">
+            <br>
 
-        <label for="outputText">Translated text:</label>
-        <input type="text" id="outputText" name="outputText">
-        <br>
-
-        <!-- second speaker (translated text) -->
-        <img src="volume-up.png"
+            <!-- second speaker (translated text) -->
+            <img src="volume-up.png"
              id="speakBtn2"
              class="speak-icon"
              onclick="speakOutput()"
@@ -48,7 +56,8 @@
              height="30"
              width="30"
              style="cursor:pointer;">
-
+             <br><br>
+        </div>
         <br><br>
         <input type="button" id="translateBtn" value="Translate">
     </form>
