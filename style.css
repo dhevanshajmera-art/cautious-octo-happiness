@@ -1,6 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 2px;
+    padding-right: 2px;
     box-sizing: border-box;
 }
 
@@ -9,8 +10,10 @@ body{
     color: #464D77;
     background-color: #F9DB6D;
     text-align: center;
+    
     width: 100%;
     border: 5px solid #877666;
+    border-radius: 40px;
     min-height: 100vh;
     padding: 2rem;
 }
@@ -19,17 +22,26 @@ h1{
     font-size: 5rem;
     margin: 2rem 0;
 }
-
-label{
-    font-size: 1.5rem;
+h2{
+    font-size: 2.5rem;
     margin: 1rem 0;
+}
+
+.from,.to{
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 2rem 1rem;
     display: block;
     text-align: center;
     justify-content: center;
     color: #242038;
+    border: 5px solid #877666;
+    border-radius: 40px;
 }
 
 input, select{
+    
     font-size: 1.2rem;
     padding: 0.5rem;
     border-radius: 10px;
@@ -40,10 +52,15 @@ input, select{
 }
 
 .language-selection{
+    
+    height: 28vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+     border: 5px solid #877666;
+    border-radius: 40px;
 }
 
 .speak-icon{
@@ -59,4 +76,9 @@ input, select{
 
 #translateBtn:hover{
     transform: scale(1.05);
+}
+label{
+    font-size: 1.99rem;
+    margin-right: 0.5rem;
+
 }
